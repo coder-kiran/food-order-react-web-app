@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "./MealItem.module.css";
+import MealItemForm from '../MealItem/MealItemForm'
+import classes from './MealItem.module.css'
 function MealItem(props) {
     const price = `$${props.meal.price.toFixed(2)}`
   return (
@@ -9,6 +10,9 @@ function MealItem(props) {
           <h3>{props.meal.name}</h3>
           <div className={classes.description}>{props.meal.description}</div>
           <div className={classes.price}>{price}</div>
+        </div>
+        <div>
+          <MealItemForm/>
         </div>
       </li>
     </>

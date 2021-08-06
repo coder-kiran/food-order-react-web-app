@@ -38,6 +38,7 @@ const AvailableMeals = () => {
             <ul>
             {mealsData}
             </ul>
+            
             </Card>
         </section>
         
